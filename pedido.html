@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#44281c">
+  <title>Seu pedido | Copo De Leite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="order-page">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="topline">UM CANTINHO DOCE EM CRAVINHOS <span><svg class="cookie-symbol" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 12.3a8.7 8.7 0 1 1-8.9-8.9 3.15 3.15 0 0 0 4.1 4.1 3.15 3.15 0 0 0 4.8 4.8Z"/><circle class="cookie-chip" cx="8.2" cy="9.1" r="1.15"/><circle class="cookie-chip" cx="13" cy="14.1" r="1.25"/><circle class="cookie-chip" cx="8.9" cy="16.2" r=".8"/></svg></span> COOKIES</div>
+  <header class="site-header">
+    <a class="brand" href="index.html#inicio" aria-label="Copo De Leite — início"><span class="brand-mark"><img src="assets/logo.webp" alt=""></span><span class="brand-name">Copo De Leite<small>COOKIES</small></span></a>
+    <nav id="primary-navigation" aria-label="Navegação principal"><a href="index.html#inicio">Início</a><a href="index.html#cookies">Nossos cookies</a><a href="index.html#visite">Onde estamos</a></nav>
+    <button class="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span></button>
+    <a class="cart-header-link" href="pedido.html#carrinho" aria-label="Abrir carrinho de encomendas"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg><span class="cart-header-count" id="header-cart-count">0</span></a>
+  </header>
+  <main class="cart-page-main" id="carrinho">
+    <section class="cart-page-intro"><p class="eyebrow">COPO DE LEITE · COOKIES</p><h1>Seu carrinho<br><em>de encomenda.</em></h1><p>Confira os sabores e quantidades do seu pedido.</p><a class="text-link" href="index.html#cookies"><svg class="arrow-icon arrow-left" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m6 6-6-6 6-6"/></svg> Voltar ao cardápio</a></section>
+    <section class="cart-panel cart-page-panel" aria-labelledby="cart-title">
+      <div class="cart-heading"><div><p class="eyebrow">SEU PEDIDO</p><h2 id="cart-title">Cookies escolhidos</h2></div><span class="cart-count" id="cart-count">0 itens</span></div>
+      <div class="cart-items" id="cart-items"><p class="cart-empty">Adicione seus cookies favoritos para começar.</p></div>
+      <div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div><a class="button checkout-button is-disabled" id="checkout-button" href="#carrinho" aria-disabled="true">Encomendar cookies (R$ 0,00) <span><svg class="arrow-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></a></div>
+    </section>
+    <p class="checkout-notice" id="checkout-notice" aria-live="polite" hidden></p>
+    <section class="reorder-section" id="reorder-section" aria-labelledby="reorder-title" hidden>
+      <div class="reorder-heading"><div><p class="eyebrow">SEU PEDIDO ANTERIOR</p><h2 id="reorder-title">Comprar novamente</h2></div><button class="button reorder-all" id="reorder-all" type="button">Adicionar pedido anterior <span><svg class="arrow-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></button></div>
+      <div class="reorder-items" id="reorder-items"></div>
+    </section>
+  </main>
+  <footer class="footer order-footer"><div class="footer-top"><div><p>Cookies e um tanto de carinho.</p></div><a href="index.html#inicio">Voltar ao início <svg class="arrow-icon arrow-up" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m-6 6 6-6 6 6"/></svg></a></div><div class="footer-bottom"><span>© COPO DE LEITE — COOKIES CRAVINHOS, SP</span><a href="https://wa.me/5516991389236?text=Ol%C3%A1%21%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noreferrer">FALE COM A GENTE</a></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/5516991389236?text=Ol%C3%A1%21%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noreferrer" aria-label="Fazer uma encomenda pelo WhatsApp"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/><path d="M9 8.8c.2-.4.5-.4.8-.4.2 0 .4.1.5.4l.6 1.3c.1.2 0 .5-.1.7l-.4.5c-.1.2-.2.3 0 .6.3.5.8 1 1.4 1.4.6.4 1.1.6 1.4.5l.6-.7c.2-.2.4-.2.7-.1l1.2.6c.3.1.3.3.3.5 0 .3-.2.8-.6 1-.4.3-.9.5-1.5.4-.6-.1-1.3-.3-2.3-.8-1.6-.8-2.7-2.6-2.8-2.8-.1-.2-.7-.9-.7-1.8 0-.8.4-1.2.6-1.3Z"/></svg></a>
+  <script src="script.js"></script>
+</body>
+</html>
